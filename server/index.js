@@ -8,7 +8,7 @@ const app = express()
 app.use('/', router)
 const PORT = 8000;
 const corsOptions = {
-    origin:"http://localhost:3000",
+    origin:"https://file-sharing-wd2q.onrender.com",
     Credentials:true
 }
 
