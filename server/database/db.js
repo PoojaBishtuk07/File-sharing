@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 
 const DBConnection = async()=>{
-    const DB_URL= `mongodb+srv://bishtpoojainbox:P00jA7@cluster0.ixhkn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+    const DB_URL= process.env.MONGO_URI
 try{
 await mongoose.connect(DB_URL, )
 console.log("database connect")
