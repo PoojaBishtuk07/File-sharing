@@ -17,8 +17,7 @@ DBConnection()
 // static files
 app.use(express.static((path.join(_dirname,"/client/build"))))
 app.get("*",(req,res)=>{
-    res.sendFile(path.resolve(_dirname, "client", "build", "index.html"))
-})
+ res.sendFile(path.join(_dirname, './client/build/index.html'))})
 
 
 app.listen(PORT,()=>
